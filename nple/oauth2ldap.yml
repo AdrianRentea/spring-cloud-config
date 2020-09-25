@@ -34,5 +34,5 @@ security:
 adVdf:
   URL: ldap://10.74.100.16:389
   domain: vodafone.com
-  searchFilter: *
+  searchFilter: '*'
   searchBase: DC=internal,DC=vodafone,DC=com
