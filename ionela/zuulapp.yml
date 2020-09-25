@@ -14,7 +14,7 @@ zuul:
     ignored-services: verb
     routes:
         verb:
-            path: '/*'
+            path: '/verb/*'
 
 
 eureka:
