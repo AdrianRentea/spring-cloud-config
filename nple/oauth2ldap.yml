@@ -11,7 +11,7 @@ security:
   signing-key: MaYzkSjmkzPC57L
   token:
     expiry-time: 180000
-    check-token-url: http://localhost:8080/ouath/check_token
+    check-token-url: http://localhost:3000/ouath/check_token
   jwt:
     resource-ids: testjwtresourceid
     client-id: testjwtclientid
@@ -20,7 +20,7 @@ security:
     scope-read: read
     scope-write: write
   encoding-strength: 256
-  security-realm: Spring Boot JWT Example Realm
+  security-realm: 'Spring Boot JWT Example Realm'
 
   #debug=true
   #endpoints.trace.sensitive=false
@@ -34,5 +34,5 @@ security:
 adVdf:
   URL: ldap://10.74.100.16:389
   domain: vodafone.com
-  searchFilter: '*'
+  searchFilter:
   searchBase: DC=internal,DC=vodafone,DC=com
