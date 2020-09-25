@@ -1,11 +1,11 @@
-server:
-  port: ${PORT:${SERVER_PORT:0}}
 srv:
   server1: 8051
   server2: 8052
   server3: 8053
 
 ---
+server:
+  port: ${PORT:${SERVER_PORT:0}}
 spring:
   profiles: sentence
   application:
