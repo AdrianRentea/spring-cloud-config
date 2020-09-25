@@ -11,7 +11,7 @@ spring:
   application:
     name: ${spring.profiles}
 zuul:
-    ignored-services: verb
+    ignored-services: '*'
     routes:
         verb:
             path: '/verb/*'
