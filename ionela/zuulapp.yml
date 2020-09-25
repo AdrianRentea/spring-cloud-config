@@ -10,6 +10,8 @@ spring:
   profiles: zuul
   application:
     name: ${spring.profiles}
+zuul:
+    ignored-services: '*'
 
 
 eureka:
