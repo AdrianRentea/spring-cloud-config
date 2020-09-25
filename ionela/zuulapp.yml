@@ -12,6 +12,9 @@ spring:
     name: ${spring.profiles}
 zuul:
     ignored-services: '*'
+    routes:
+        verb:
+            path: /
 
 
 eureka:
