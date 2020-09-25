@@ -1,0 +1,24 @@
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+
+srv:
+  server1: 8081
+  server2: 8082
+  server3: 8083
+
+---
+
+spring:
+  profiles: sentence
+  application:
+    name: ${spring.profiles}
+
+eureka:
+  instance:
+    instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+  client:
+    serviceUrl:
+      defaultZone: http://eureka-srv1:${srv.server1}/eureka,http://eureka-srv2:${srv.server2}/eureka,http://eureka-srv3:${srv.server3}/eureka
+    register-with-eureka: true
+    feth-registry: true
+    should-unregister-on-shutdown: true
