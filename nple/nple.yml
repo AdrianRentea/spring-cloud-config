@@ -1,9 +1,9 @@
 server:
   port: 3000
 
-
+---
 spring:
-#  profiles: locahost
+  profiles: locahost
   application:
     name: oauth2ldap
     
